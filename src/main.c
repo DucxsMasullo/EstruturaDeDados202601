@@ -1,22 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "lse.h"
+#include "lde.h"
+
 
 
 int main (void){
     printf("hello world");
-    Nolse *head = NULL;
+    Nolde *head = NULL;
 
-    for(int i=0;i<5;i++){
-        addList(&head);
+    for(int i=0;i<6;i++){
+        int dado = 0;
+        printf("insira dado\n");
+        scanf("%d", &dado);
+        addordenedlde(&head,dado);
     }
 
-    deleteList(&head);
-
-    printlist(&head);
-    scanf("%d", &head);
-    
-    
-    
+    devprint(&head);
+    scanf("%d", head);
+    return 0;
 
 }    
