@@ -7,13 +7,11 @@ typedef struct no {
     struct no *anterior;
 } Nolde;
 
-Nolde* createnewnode(int dado);
-void addheadlde(Nolde **head, Nolde *newnode);
-void addtaillde(Nolde **head, Nolde *newnode);
-void addonleft(Nolde *current, Nolde *newnode);
-void addonright(Nolde *current, Nolde *newnode);
-void addordenedlde(Nolde **head,int dado);
-void devprint(Nolde **head);
+void add_ordened_lde(Nolde **head,int dado);
+void add_not_ordened_lde(Nolde **head, int dado);
+void delete_item_lde(Nolde **head, int dado);
+void print_list_lde(Nolde *head);
+void delete_list_lde(Nolde **head);
 
 
 #endif
