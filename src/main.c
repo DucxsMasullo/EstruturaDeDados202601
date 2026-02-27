@@ -1,25 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "lde.h"
+#include "pilha.h"
 
 
 
 int main (void){
     printf("hello world");
-    Nolde *head = NULL;
+    Pilha *pilha = NULL;
 
-    for(int i=0;i<7;i++){
-        int dado = 0;
-        printf("insira dado\n");
-        scanf("%d", &dado);
-        add_not_ordened_lde(&head, dado);
+
+    for(int i=0;i<4;i++){
+        push_pilha(&pilha);
     }
-    
+    for(int i=0;i<5;i++){
+        pop_item(&pilha);
+    }
 
-    delete_list_lde(&head);
+    scanf("%d", pilha);
 
-    print_list_lde(head);
-    scanf("%d", head);
     return 0;
 
 }    
