@@ -1,21 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "fila.h"
+#include "bst.h"
 
 
 
 int main (void){
-    printf("hello world");
+    printf("hello world\n");
     int cntrl;
-    Fila *fila = NULL;
-    
+    Nobst *root = NULL;
+
     for(int i=0;i<4;i++){
-        enqueu(&fila);
+        add_node_tree_user_entry(&root);
     }
 
-    dequeu(&fila);
+    print_bsl(&root);
+    delete_bsl(&root);
+    print_bsl(&root);
 
-    print_queu(&fila);
+    
 
     scanf("%d", &cntrl);
 
