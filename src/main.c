@@ -1,23 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "bst.h"
+#include "avl.h"
 
 
 
 int main (void){
     printf("hello world\n");
     int cntrl;
-    Nobst *root = NULL;
+    Noavl *root = NULL;
 
-    for(int i=0;i<4;i++){
-        add_node_tree_user_entry(&root);
+    for(int i=0;i<10;i++){
+        add_on_tree(&root);
     }
 
-    print_bsl(&root);
-    delete_bsl(&root);
-    print_bsl(&root);
-
-    
+    print_all_tree(&root);
 
     scanf("%d", &cntrl);
 
